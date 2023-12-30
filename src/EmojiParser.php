@@ -25,6 +25,9 @@ class EmojiParser
             if ($name === $emojiData['slug']) {
                 return $emojiData['char'];
             }
+            elseif ($name === $emojiData['name']) {
+                return $emojiData['char'];
+            }
             elseif (in_array($name, $emojiData['keywords'])) {
                 return $emojiData['char'];
             }

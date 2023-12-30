@@ -12,7 +12,7 @@ class EmojiServiceProvider extends ServiceProvider
     /**
      * @return void
      */
-    public function register(): void
+    public function boot(): void
     {
         $this->app->singleton('emoji.parser', function () {
             return new EmojiParser();

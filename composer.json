@@ -3,7 +3,7 @@
     "description": "A Laravel package for handling emoji expressions in blade files.",
     "keywords": ["laravel", "emoji", "parser"],
     "license": "MIT",
-    "version": "v1.0.0",
+    "version": "v1.0.1",
     "authors": [
         {
             "name": "Baran Arda",
@@ -11,10 +11,6 @@
         }
     ],
     "minimum-stability": "stable",
-    "require": {
-        "php": "^8.0",
-        "laravel/framework": "^9.0"
-    },
     "autoload": {
         "psr-4": {
             "Theposeidonas\\LaravelEmojiParser\\": "src/"

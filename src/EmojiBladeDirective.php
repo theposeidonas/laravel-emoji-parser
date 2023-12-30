@@ -10,11 +10,8 @@ class EmojiBladeDirective
      */
     public static function register()
     {
-        Blade::directive('emoji', function ($expression) {
-            $emojiParser = app('emoji.parser');
-            $emoji = $emojiParser->parse($expression);
-
-            return "<?php echo '{$emoji}'; ?>";
+        Blade::directive('emoji', function (string $expression) {
+            return "<?php echo app('emoji.parser')->parse($expression); ?>";
         });
     }
 }
